@@ -26,3 +26,14 @@ function mathOperations(numberOne, numberTwo, operator) {
 }
 
 mathOperations(5, 6, '**')
+
+// Variant 2 with eval()
+function mathOperations(numberOne, numberTwo, operator) {
+    const expression = `${numberOne} ${operator} ${numberTwo}`
+
+    const result = eval(expression)
+
+    console.log(result);
+}
+
+mathOperations(5, 6, '**')
