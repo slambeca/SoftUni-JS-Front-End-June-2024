@@ -20,7 +20,7 @@ function ticketPrice (typeOfDay, age) {
     } else if (typeOfDay == 'Holiday' && age > 64 && age <= 122) {
         priceOfTicket = 10;
     } else {
-        priceOfTicket = 'Error!'
+        priceOfTicket = 'Error!';
     }
 
     if (priceOfTicket != 'Error!') {
