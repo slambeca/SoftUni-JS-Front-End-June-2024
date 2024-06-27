@@ -34,7 +34,7 @@ function vacation(countPeople, type, day) {
         }
     }
 
-    totalTicketPrice = countPeople * ticketPrice
+    totalTicketPrice = countPeople * ticketPrice;
 
     if (type === 'Students' && countPeople >= 30) {
         totalTicketPrice *= 0.85;
@@ -91,14 +91,14 @@ function vacation(countPeople, type, day) {
         }
     }
 
-    totalTicketPrice = countPeople * ticketPrice
+    totalTicketPrice = countPeople * ticketPrice;
 
-    if (type === 'Students' && countPeople >= 30) {
+    if (isStudentsGroup && countPeople >= 30) {
         totalTicketPrice *= 0.85;
-    } else if (type === 'Regular' && countPeople >= 10 && countPeople <= 20) {
+    } else if (isRegularGroup && countPeople >= 10 && countPeople <= 20) {
         totalTicketPrice *= 0.95;
-    } else if (type === 'Business' && countPeople >= 100) {
-        totalTicketPrice = totalTicketPrice - 10 * ticketPrice;
+    } else if (isBusinessGroup && countPeople >= 100) {
+        totalTicketPrice -= 10 * ticketPrice;
     }
     console.log(`Total price: ${totalTicketPrice.toFixed(2)}`);
 }
