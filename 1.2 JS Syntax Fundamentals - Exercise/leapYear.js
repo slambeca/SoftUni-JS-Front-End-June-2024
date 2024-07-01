@@ -8,4 +8,13 @@ function checkLeapYear(year) {
     console.log(result);
 }
 
-checkLeapYear(1986);
+checkLeapYear(1984);
+
+// Variant 2
+function checkLeapYear(year) {
+    const isLeap = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+
+    console.log(isLeap ? 'yes' : 'no');
+}
+
+checkLeapYear(1985);
