@@ -1,6 +1,6 @@
 function sameNumbers(number) {
     let totalSum = 0;
-    numberAsString = String(number);
+    let numberAsString = String(number);
     let allSame = true;
     
     firstNum = numberAsString[0];
