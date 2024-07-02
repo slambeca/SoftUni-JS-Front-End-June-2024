@@ -10,3 +10,10 @@ function reversedChars(charA, charB, charC) {
 }
 
 reversedChars('A', 'B', 'C')
+
+// Variant 3
+function reversedChars(...args) {
+    console.log(args.reverse().join(' '));
+}
+
+reversedChars('A', 'B', 'C')
