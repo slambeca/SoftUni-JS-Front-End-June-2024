@@ -19,3 +19,22 @@ function evenAndOdd(numbers) {
 evenAndOdd([1,2,3,4,5,6]);
 evenAndOdd([3,5,7,9]);
 evenAndOdd([2,4,6,8,10]);
+
+// Variant 2
+function solve(numbers) {
+    let result = 0;
+
+    for (let currentNum of numbers) {
+        if (Number(currentNum) % 2 === 0) {
+            result += Number(currentNum);
+        } else {
+            result -= Number(currentNum);
+        }
+    }
+
+    console.log(result);
+}
+
+evenAndOdd([1,2,3,4,5,6]);
+evenAndOdd([3,5,7,9]);
+evenAndOdd([2,4,6,8,10]);
