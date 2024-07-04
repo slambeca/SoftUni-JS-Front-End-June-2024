@@ -16,3 +16,14 @@ function sumFirstAndLast(numbersArray) {
 }
 
 sumFirstAndLast([10, 20, 30])
+
+
+// Variant 3 (Not recommended)
+function sumFirstAndLastNew(numbers) {
+    let first = numbers.shift();
+    let last = numbers.pop();
+
+    console.log(first + last);
+}
+
+sumFirstAndLast([10, 20, 30])
