@@ -11,5 +11,14 @@ function everyNElement(array=[], step=Number) {
 }
 
 console.log(everyNElement(['5', '20', '31', '4', '20'], 2));
-console.log(everyNElement(['dsa','asd', 'test', 'tset'], 2));
+console.log(everyNElement(['dsa', 'asd', 'test', 'tset'], 2));
+console.log(everyNElement(['1', '2','3', '4', '5'], 6));
+
+// Variant 2
+function printEveryNthElement(array=[], step=Number) {
+    return (array.filter((_, i) => i % step === 0));
+}
+
+console.log(everyNElement(['5', '20', '31', '4', '20'], 2));
+console.log(everyNElement(['dsa', 'asd', 'test', 'tset'], 2));
 console.log(everyNElement(['1', '2','3', '4', '5'], 6));
