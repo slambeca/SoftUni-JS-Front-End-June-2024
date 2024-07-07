@@ -3,7 +3,7 @@ function sortNames (array=[]) {
     let resultArray = [];
 
     for (let i=0; i<sortedArray.length; i++) {
-        resultArray.push(`${i+1}.${sortedArray[i]}`)
+        resultArray.push(`${i+1}.${sortedArray[i]}`);
     }
 
     console.log(resultArray.join('\n').trim());
