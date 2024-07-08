@@ -22,3 +22,19 @@ function solve(word='', text='') {
 
 stringSubstring('javascript', 'JavaScript is the best programming language');
 stringSubstring('python', 'JavaScript is the best programming language');
+
+// Variant 3
+function solve(word, text) {
+    const splittedText = text.split(' ');
+    let match;
+
+    for(let currentWord of splittedText) {
+        if (word.toLowerCase() === currentWord.toLowerCase()) {
+            match = currentWord;
+    }
+    }
+    console.log(match ? word : `${word} not found!`);
+}
+
+solve('javascript', 'JavaScript is the best programming language');
+solve('python', 'JavaScript is the best programming language');
