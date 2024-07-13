@@ -27,7 +27,10 @@ function findSmallestNumberNew(a, b, c) {
 
 findSmallestNumberNew(2, 10, 5);
 
-// Variant 3 (not suitable for Judge)
+// Variant 3
 const smallestNumberNew = (a, b, c) => Math.min(a, b, c);
 
 console.log(smallestNumberNew(2, 5, 10));
+
+// Variant 4
+((a, b, c) => console.log(Math.min(a, b, c)))(1, 2, 3);
