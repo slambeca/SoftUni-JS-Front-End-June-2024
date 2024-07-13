@@ -1,7 +1,7 @@
 function repeatString(string='', count=Number) {
-    let result = string.repeat(count)
+    let result = string.repeat(count);
 
-    return result
+    return result;
 }
 
 console.log(repeatString('abc', 3));
