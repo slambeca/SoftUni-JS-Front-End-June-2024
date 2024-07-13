@@ -5,10 +5,10 @@ function findSmallestNumber(firstNum=Number, secondNum=Number, thirdNum=Number) 
 }
 
 
-findSmallestNumber(2, 5, 3);
-findSmallestNumber(600, 342, 123);
-findSmallestNumber(25, 21,4);
-findSmallestNumber(2, 2, 2);
+// findSmallestNumber(2, 5, 3);
+// findSmallestNumber(600, 342, 123);
+// findSmallestNumber(25, 21,4);
+// findSmallestNumber(2, 2, 2);
 
 // Variant 2
 function findSmallestNumberNew(a, b, c) {
@@ -26,3 +26,8 @@ function findSmallestNumberNew(a, b, c) {
 }
 
 findSmallestNumberNew(2, 10, 5);
+
+// Variant 3 (not suitable for Judge)
+const smallestNumberNew = (a, b, c) => Math.min(a, b, c);
+
+console.log(smallestNumberNew(2, 5, 10));
