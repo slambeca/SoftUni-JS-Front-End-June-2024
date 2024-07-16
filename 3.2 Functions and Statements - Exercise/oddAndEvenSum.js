@@ -1,15 +1,14 @@
 function printOddAndEvenSum(num=Number) {
-
     let oddSum = 0;
     let evenSum = 0;
 
     const numAsString = num.toString();
 
-    for (i=0; i<numAsString.length; i++) {
+    for (i = 0; i < numAsString.length; i++) {
         if (numAsString[i] % 2 == 0) {
-            evenSum += Number(numAsString[i])
+            evenSum += Number(numAsString[i]);
         } else {
-            oddSum += Number(numAsString[i])
+            oddSum += Number(numAsString[i]);
         }
     }
 
