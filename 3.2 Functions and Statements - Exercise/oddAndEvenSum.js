@@ -5,7 +5,7 @@ function printOddAndEvenSum(num=Number) {
     const numAsString = num.toString();
 
     for (i = 0; i < numAsString.length; i++) {
-        if (numAsString[i] % 2 == 0) {
+        if (numAsString[i] % 2 === 0) {
             evenSum += Number(numAsString[i]);
         } else {
             oddSum += Number(numAsString[i]);
@@ -32,7 +32,7 @@ function printOddAndEvenSum2(num=Number) {
     const numAsString = num.toString();
 
     for (i = 0; i < numAsString.length; i++) {
-        if (numAsString[i] % 2 == 0) {
+        if (numAsString[i] % 2 === 0) {
             evenNumbers.push(numAsString[i]);
         } else {
             oddNumbers.push(numAsString[i]);
