@@ -20,3 +20,22 @@ function checkForPalindromes(array=[]) {
 
 checkForPalindromes([123,323,421,121]);
 checkForPalindromes([32,2,232,1010]);
+
+// Variant 2
+
+function checkForPalindromes(array=[]) {
+    function isPalindrome(num=Number) {
+        const str = num.toString();
+        const reversedStr = str.split('').reverse().join('')
+    
+        return str === reversedStr;
+    }
+
+    for (let i = 0; i < array.length; i++) {
+        console.log(isPalindrome(array[i]));
+    }
+}
+
+
+checkForPalindromes([123,323,421,121]);
+checkForPalindromes([32,2,232,1010]);
