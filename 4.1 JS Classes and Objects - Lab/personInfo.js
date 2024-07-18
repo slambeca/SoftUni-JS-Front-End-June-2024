@@ -3,7 +3,7 @@ function createPersonObject(fName, lName, age) {
         firstName: fName,
         lastName: lName,
         age: age,
-    }
+    };
 
     return person;
 }
