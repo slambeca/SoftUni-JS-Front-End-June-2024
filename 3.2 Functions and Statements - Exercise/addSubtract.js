@@ -3,7 +3,7 @@ function addAndSubtract(firstNum, secondNum, thirdNum) {
     const subtractTwoNumbers = (x, y) => x - y;
 
     const firstResult = sumTwoNumbers(firstNum, secondNum);
-    const secondResult = subtractTwoNumbers(firstResult, thirdNum)
+    const secondResult = subtractTwoNumbers(firstResult, thirdNum);
 
     console.log(secondResult);
 }
