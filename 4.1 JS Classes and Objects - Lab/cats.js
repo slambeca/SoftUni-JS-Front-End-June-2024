@@ -18,4 +18,4 @@ function solve(input) {
     }
 }
 
-solve(['Mellow 2', 'Tom 5'])
+solve(['Mellow 2', 'Tom 5']);
