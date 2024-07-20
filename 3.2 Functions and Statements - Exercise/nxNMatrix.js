@@ -22,4 +22,4 @@ function printMatrix(number) {
     }
 }
 
-printMatrix(2)
+printMatrix(2);
