@@ -6,4 +6,4 @@ function checkGrade(number) {
     }
 }
 
-checkGrade(7)
+checkGrade(7);
