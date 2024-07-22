@@ -13,7 +13,7 @@ function manageMovies(commands) {
             }
         } else if (currentMovie.includes(' onDate ')) {
             let [movieName, movieDate] = currentMovie.split(' onDate ');
-            let movie = movies.find(m => m.name === movieName) 
+            let movie = movies.find(m => m.name === movieName);
             if (movie) {
                 movie.date = movieDate;
             }
