@@ -8,15 +8,14 @@ function wordsTracker(input) {
     });
 
     const restOfTheWords = input.slice(1);
-    
-    for(let searchedWord of searchedWords) {
-        for(let otherWord of restOfTheWords) {
+
+    for (let searchedWord of searchedWords) {
+        for (let otherWord of restOfTheWords) {
             if (searchedWord === otherWord) {
                 result[searchedWord] += 1;
             }
         }
     }
-
 
     const sortedResult = Object.entries(result).sort((a, b) => b[1] - a[1]);
 
@@ -28,12 +27,12 @@ function wordsTracker(input) {
 }
 
 wordsTracker([
-    'this sentence', 
+    'this sentence',
     'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurrences', 'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task'
-    ]
-    );
+]
+);
 
 wordsTracker([
-    'is the', 
+    'is the',
     'first', 'sentence', 'Here', 'is', 'another', 'the', 'And', 'finally', 'the', 'the', 'sentence']
-    );
+);
