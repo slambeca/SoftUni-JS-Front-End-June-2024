@@ -4,7 +4,7 @@ function registerHeroes(heroesAsInput) {
     for(hero of heroesAsInput) {
         let [name, level, items] = hero.split(' / ');
 
-        level = parseInt(level)
+        level = parseInt(level);
         items = items ? items.split(', ') : [];
 
         heroes.push({
