@@ -1,5 +1,5 @@
 function extract(content) {
-    const contentElement = document.getElementById('content');
+    const contentElement = document.getElementById(content);
     const pattern = /\(([^()]+)\)/g;
 
     const matches = contentElement.textContent.matchAll(pattern);
