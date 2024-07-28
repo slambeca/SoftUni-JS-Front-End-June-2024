@@ -21,5 +21,4 @@ function calculateTotalPrice(product='', quantity=Number) {
     console.log(totalPrice.toFixed(2));
 }
 
-calculateTotalPrice('water', 5);
 calculateTotalPrice('coffee', 2);
