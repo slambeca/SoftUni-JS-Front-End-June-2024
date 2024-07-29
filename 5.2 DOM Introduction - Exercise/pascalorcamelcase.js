@@ -1,5 +1,4 @@
 function solve() {
-
   const validNamingConventions = ['Camel Case', 'Pascal Case'];
 
   const textLabelEl = document.querySelector('#text');
@@ -16,12 +15,9 @@ function solve() {
     .map((x) => x[0].toUpperCase()
       .concat(x.slice(1))).join('');
 
-  
   if (namingConventionEl.value === 'Camel Case') {
     resultEl.textContent = pascalCaseText[0].toLowerCase().concat(pascalCaseText.slice(1));
   } else {
     resultEl.textContent = pascalCaseText;
   }
-
-
 }
