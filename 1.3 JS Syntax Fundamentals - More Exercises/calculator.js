@@ -7,13 +7,13 @@ function calculator(numOne, operation, numTwo) {
     const isMultiply = operation === '*';
 
     if (isPlus) {
-        result = numOne + numTwo
+        result = numOne + numTwo;
     } else if (isMinus) {
-        result = numOne - numTwo
+        result = numOne - numTwo;
     } else if (isSubtract) {
-        result = numOne / numTwo
+        result = numOne / numTwo;
     } else if (isMultiply) {
-        result = numOne * numTwo
+        result = numOne * numTwo;
     }
 
     console.log(result.toFixed(2));
