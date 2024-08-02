@@ -17,7 +17,6 @@ function search() {
    clearPreviousState();
    
    const [inputEl] = document.getElementsByTagName('input');
-
    const matchElements = getMatchElements(inputEl.value);
 
    matchElements.forEach((matchEl) => {
