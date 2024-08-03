@@ -7,3 +7,8 @@ function checkGrade(number) {
 }
 
 checkGrade(7);
+
+// Variant 2
+function checkGrade(number) {
+    console.log(number >= 5.50 ? 'Excellent' : 'Not excellent');
+}
