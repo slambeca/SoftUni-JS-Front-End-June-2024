@@ -9,3 +9,10 @@ function addAndSubtract(firstNum, secondNum, thirdNum) {
 }
 
 addAndSubtract(10, 20, 30);
+
+// Variant 2
+function addAndSubtract(a, b, c) {
+    console.log((a + b) - c);
+}
+
+addAndSubtract(10, 20, 30);
