@@ -15,3 +15,12 @@ function findResult(firstNum=Number, secondNum=Number) {
 
 findResult(5, 2);
 findResult(6, 2);
+
+// Variant 2
+function findResult(firstNum, secondNum) {
+    const factorial = n => n ? n * factorial(n - 1) : 1;
+    console.log((factorial(firstNum) / factorial(secondNum)).toFixed(2));
+}
+
+findResult(5, 2);
+findResult(6, 2);
