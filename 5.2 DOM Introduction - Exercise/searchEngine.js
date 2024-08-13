@@ -25,4 +25,18 @@ function solve() {
 
       searchFieldEl.value = '';
    }
+
+   // Variant 2
+   function solve() {
+    document.querySelector('#searchBtn').addEventListener('click', () => {
+        const searchFieldEl = document.getElementById('searchField');
+        const input = searchFieldEl.value.toLowerCase();
+
+        document.querySelectorAll('table.container tbody tr').forEach(rowEl => {
+            rowEl.classList.toggle('select', rowEl.textContent.toLowerCase().includes(input));
+        });
+
+        searchFieldEl.value = '';
+    });
+}
 }
