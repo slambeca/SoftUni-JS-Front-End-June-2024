@@ -19,3 +19,17 @@ function ageCheck(age) {
 }
 
 ageCheck(-1)
+
+// Variant 2
+function ageCheck(age) {
+    const result = age < 0 ? 'out of bounds' :
+                   age <= 2 ? 'baby' :
+                   age <= 13 ? 'child' :
+                   age <= 19 ? 'teenager' :
+                   age <= 65 ? 'adult' :
+                   'elder';
+
+    console.log(result);
+}
+
+ageCheck(-1);  
