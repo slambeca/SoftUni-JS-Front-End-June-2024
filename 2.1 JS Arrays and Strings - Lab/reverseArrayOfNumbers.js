@@ -14,3 +14,9 @@ reverseArray(2, [66, 43, 75, 89, 47]);
 function reverseArray(count, numbersArray) {
     console.log(numbersArray.slice(0, 0+count).reverse().join(' '));
 }
+
+// Variant 3
+function reverseSegment(length, arr) {
+    let segment = arr.slice(0, length).reverse();
+    console.log(segment.join(' '));
+}
